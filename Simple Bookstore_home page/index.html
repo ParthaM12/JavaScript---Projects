@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookD'or</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>BookD'or</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Ponniyin Selvan</h2>
+            <h5 style="color: yellow;">Kalki</h5>
+            <p>Ponniyin Selvan, authored by Kalki Krishnamurthy, is a brilliant set of five volumes in Tamil. It is a historical novel, which recounts the story of Raja Raja Chola I. Ponniyin Selvan means 'The son of Ponni'. It chronicles the story Arulmozhivarman, who was crowned as Raja Raja Chola I in the later years.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>b 
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="book-title-input">
+            <input type="text" placeholder="Author name" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
